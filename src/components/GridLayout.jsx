@@ -30,7 +30,7 @@ const GridLayout = () => {
                     </div>
                 </div>
                 <hr id='hr'/>
-                <p id='keep'>keep</p>
+                <p id='keep'>click any cell</p>
             </footer>
         </div>
     )
