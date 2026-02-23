@@ -1,0 +1,34 @@
+clors {
+    color: rgb(227, 100, 99);
+    color: rgb(201, 33, 128);
+    color: rgb(247, 186, 185);
+    color: rgb(250, 211, 75);
+
+
+    color: rgb(231, 208, 176);
+    color: rgb(226, 189, 139);
+    color: rgb(187, 161, 121);
+    color: rgb(153, 123, 79);
+
+    color: rgb(70, 74, 85);
+    color: rgb(184, 192, 209);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#background {
+    background-color: rgb(38, 73, 131);
+    height: 100vh;
+    width: 500px;
+}
+
