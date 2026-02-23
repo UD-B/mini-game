@@ -3,30 +3,34 @@ import React from 'react'
 const GridLayout = () => {
 
     const board = []
-    for (let i = 0; i < 100; i++) {
-        board.push[i];
+    for (let i = 1; i <= 100; i++) {
+        board.push(i);
     }
+    console.log('x:', board.length);
 
     return (
         <div id='background'>
             <header className='header'>
-                <p id='find'>Find the</p>
-                <p id='secret'>Secret Color!</p>
+                <p id='find'>Find the </p>
+                <p id='secret'> Secret Color!</p>
                 <div id='square'></div>
             </header>
             <main className='main'>
                 <div id='grid'>
-                    {board.map((num) => {
-                        <div onClick={null} key={num} className='cell'>{num}</div>
-                    })}
+                    {board.map((num) =>
+                        <div onClick={null} key={num} id='cell'></div>
+                    )}
                 </div>
             </main>
             <footer className='footer'>
                 <div id='clicks-row'>
-                    <p id='clicks'>Clicks: </p>
-                    <p id='num-clicks'></p>
+                    <div id='dont-move'>
+                        <p id='clicks'>Clicks: </p>
+                        <p id='num-clicks'>0</p>
+                    </div>
                 </div>
-                <p id='keep'></p>
+                <hr id='hr'/>
+                <p id='keep'>keep</p>
             </footer>
         </div>
     )

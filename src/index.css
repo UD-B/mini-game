@@ -1,8 +1,8 @@
 clors {
-    color: rgb(227, 100, 99);
-    color: rgb(201, 33, 128);
-    color: rgb(247, 186, 185);
-    color: rgb(250, 211, 75);
+    color: ;
+    color: ;
+    color: ;
+    color: ;
 
 
     color: rgb(231, 208, 176);
@@ -11,7 +11,7 @@ clors {
     color: rgb(153, 123, 79);
 
     color: rgb(70, 74, 85);
-    color: rgb(184, 192, 209);
+    color: ;
 }
 
 * {
@@ -29,6 +29,90 @@ body {
 #background {
     background-color: rgb(38, 73, 131);
     height: 100vh;
-    width: 500px;
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    text-shadow: 2px 2px 3px rgb(45, 45, 45);
+    margin-bottom: 20px;
+    margin-top: 40px;
+}
+
+#find {
+    font-size: xx-large;
+    color: white;
+}
+
+#secret {
+    font-size: 2.5rem;
+    color: rgb(227, 100, 99);
+}
+
+#square {
+    box-shadow: 2px 2px 3px rgb(45, 45, 45);
+    height: 40px;
+    width: 40px;
+    background-color: rgb(201, 33, 128);
+    border: solid 1px rgb(247, 186, 185);
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#grid {
+    height: 400px;
+    width: 400px;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    gap: 4px;
+    background-color: rgb(184, 192, 209);
+    padding: 4px;
+    border-radius: 2px;
+}
+
+#cell {
+    background-color: rgb(70, 74, 85);
+    box-shadow: 1.5px 1.5px 1.5px;
+}
+
+.footer {
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+#clicks-row {
+    display: flex;
+    justify-content: center;
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 3px rgb(45, 45, 45);
+    color: white;
+}
+
+#dont-move {
+    display: flex;
+    gap: 5px;
+    width: 150px;
+}
+
+#hr {
+    width: 200px;
+    justify-self: center;
+}
+
+#keep {
+    font-size: xx-large;
+    color: rgb(250, 211, 75);
+    display: flex;
+    justify-content: center;
+}
