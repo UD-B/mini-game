@@ -1,6 +1,12 @@
 import React from 'react'
 
 const GridLayout = () => {
+
+    const board = []
+    for (let i = 0; i < 100; i++) {
+        board.push[i];
+    }
+
     return (
         <div id='background'>
             <header className='header'>
@@ -9,7 +15,11 @@ const GridLayout = () => {
                 <div id='square'></div>
             </header>
             <main className='main'>
-                <div id='grid'></div>
+                <div id='grid'>
+                    {board.map((num) => {
+                        <div onClick={null} key={num} className='cell'>{num}</div>
+                    })}
+                </div>
             </main>
             <footer className='footer'>
                 <div id='clicks-row'>
