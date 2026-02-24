@@ -114,7 +114,7 @@ body {
 #dont-move {
     display: flex;
     gap: 5px;
-    width: 150px;
+    /* width: 150px; */
 }
 
 #hr {
