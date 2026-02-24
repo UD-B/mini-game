@@ -96,6 +96,11 @@ body {
     box-shadow: 2px 2px 2px rgb(114, 114, 114);
 }
 
+.footer {
+    display: flex;
+    justify-content: center;
+}
+
 #clicks-row {
     display: flex;
     justify-content: center;
@@ -111,6 +116,7 @@ body {
 }
 
 #hr {
+    display: flex;
     width: 200px;
     justify-self: center;
     margin: 5px;
