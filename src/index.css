@@ -57,7 +57,7 @@ body {
     background-color: rgb(184, 192, 209);
     padding: 4px;
     border-radius: 2px;
-    margin: 50px 0;
+    margin: 40px 0;
 }
 
 .cell {
@@ -75,7 +75,7 @@ body {
     background:linear-gradient(0deg, rgb(222, 183, 132), rgb(68, 62, 54));
     color: rgb(199, 171, 129);
     text-shadow: 0.5px 0.5px 0.5px rgb(70, 70, 70);
-    font-size: 64px;
+    font-size: 60px;
     font-weight: 900;
     border: 1px solid rgb(153, 123, 79);
 }
@@ -127,7 +127,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 60px;
+    margin-top: 40px;
     justify-self: center;
     width: 150px;
     height: 60px;
