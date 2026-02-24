@@ -1,13 +1,8 @@
-clors {
-    color: rgb(231, 208, 176);
-    color: rgb(226, 189, 139);
-    color: rgb(187, 161, 121);
-    color: rgb(153, 123, 79);
-}
 
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -15,15 +10,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-#background {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    overflow: hidden;
     background-color: rgb(38, 73, 131);
-    height: 100vh;
-    width: 450px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
 }
 
 .header {
@@ -32,8 +21,6 @@ body {
     align-items: center;
     gap: 5px;
     text-shadow: 2px 2px 3px rgb(45, 45, 45);
-    margin-bottom: 20px;
-    margin-top: 40px;
 }
 
 #find {
@@ -48,10 +35,10 @@ body {
 
 #square {
     box-shadow: 2px 2px 3px rgb(45, 45, 45);
-    height: 40px;
-    width: 40px;
-    background-color: rgb(201, 33, 128);
+    height: 35px;
+    width: 35px;
     border: solid 1px rgb(247, 186, 185);
+    border-radius: 2px;
 }
 
 .main {
@@ -61,25 +48,52 @@ body {
 }
 
 #grid {
-    height: 400px;
-    width: 400px;
+    min-height: 400px;
+    min-width: 400px;
     display: grid;
-    grid-template-columns: repeat(10, 1fr);
-    grid-template-rows: repeat(10, 1fr);
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
     gap: 4px;
     background-color: rgb(184, 192, 209);
     padding: 4px;
     border-radius: 2px;
+    margin: 50px 0;
 }
 
-#cell {
+.cell {
     background-color: rgb(70, 74, 85);
-    box-shadow: 1.5px 1.5px 1.5px;
+    box-shadow: 2px 2px 2px rgb(114, 114, 114);
+    border-radius: 2px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.footer {
-    margin-top: 20px;
-    margin-bottom: 40px;
+.empty {
+    
+    background:linear-gradient(0deg, rgb(222, 183, 132), rgb(68, 62, 54));
+    color: rgb(199, 171, 129);
+    text-shadow: 0.5px 0.5px 0.5px rgb(70, 70, 70);
+    font-size: 64px;
+    font-weight: 900;
+    border: 1px solid rgb(153, 123, 79);
+}
+
+.cell:hover:not(.secret) {
+    background-color: rgb(90, 95, 110);
+    box-shadow: 2px 2px 2px rgb(59, 59, 59);
+    border-radius: 2px;
+    
+}
+
+.empty:hover {
+    background-color: rgb(226, 189, 139);
+    box-shadow: 2px 2px 2px rgb(114, 114, 114);
+}
+
+.secret:hover {
+    box-shadow: 2px 2px 2px rgb(114, 114, 114);
 }
 
 #clicks-row {
@@ -99,6 +113,7 @@ body {
 #hr {
     width: 200px;
     justify-self: center;
+    margin: 5px;
 }
 
 #keep {
@@ -107,3 +122,38 @@ body {
     display: flex;
     justify-content: center;
 }
+
+#button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+    justify-self: center;
+    width: 150px;
+    height: 60px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px rgb(54, 54, 54);
+    color: white;
+    font-size: x-large;
+    background: linear-gradient(30deg, rgb(182, 98, 225), rgb(220, 151, 40));
+}
+
+#button:hover {
+    box-shadow: 2px 2px 2px rgb(85, 85, 85);
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.colors1 {background-color: rgb(201, 33, 128)}
+.colors2 {background-color: rgb(190, 201, 33)}
+.colors3 {background-color: rgb(187, 243, 218)}
+.colors4 {background-color: rgb(201, 33, 33)}
+.colors5 {background-color: rgb(201, 33, 201)}
+.colors6 {background-color: rgb(36, 33, 201)}
+.colors7 {background-color: rgb(49, 178, 159)}
+.colors8 {background-color: rgb(34, 152, 30)}
+.colors9 {background-color: rgb(2, 141, 255)}
+.colors10 {background-color: rgb(255, 148, 47)}
+.colors11 {background-color: rgb(236, 95, 255)}
+.colors12 {background-color: rgb(64, 24, 123)}
+.colors13 {background-color: rgb(149, 102, 1)}
