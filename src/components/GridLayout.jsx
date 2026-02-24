@@ -4,7 +4,7 @@ const GridLayout = () => {
     const [click, setclick] = useState(0)
     const [keep, setKeep] = useState("Click Any Cell")
     const board = []
-    for (let i = 1; i < 26; i++) {
+    for (let i = 1; i < 17; i++) {
         board.push(i);
     }
 
@@ -21,7 +21,7 @@ const GridLayout = () => {
     }
 
     const [color, setColor] = useState(randomColor())
-    const secretLOcation = useRef(randomInt(1, 25)).current
+    const secretLOcation = useRef(randomInt(1, 16)).current
 
     function handleClick(e, num) {
         if (e.target.classList.contains("empty")) return;

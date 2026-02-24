@@ -51,8 +51,8 @@ body {
     min-height: 400px;
     min-width: 400px;
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
     gap: 4px;
     background-color: rgb(184, 192, 209);
     padding: 4px;
